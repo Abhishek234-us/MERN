@@ -8,7 +8,7 @@ import cors from'cors';
 import categoryRoutes from './routes/categoryRoutes.js'
 import productRoutes from "./routes/productRoutes.js"
 import path from "path";
-import {fileURLTopath} from 'url';
+import { fileURLTopath } from 'url';
 //Congigure env
 dotenv.config();
 
@@ -16,8 +16,8 @@ dotenv.config();
 connectDB();
 
 // es miodulefix
-const __filename= fileURLTopath(import.meta.url);
-const __dirname=path.dirname(__filename);
+const __filename = fileURLTopath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // rest object
 const app = express();
